@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="org.gsm.autocrypttest.viewmodel.CenterViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="주소" />
+
+        <TextView
+            android:id="@+id/centerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/address"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="센터명" />
+
+        <TextView
+            android:id="@+id/facilityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/centerName"
+            tools:text="기관명" />
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/facilityName"
+            tools:text="전화번호" />
+
+        <TextView
+            android:id="@+id/updateAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumber"
+            tools:text="업데이트" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
